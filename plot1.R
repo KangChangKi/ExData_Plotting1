@@ -1,5 +1,11 @@
 # plot1.R
 
+dataFile <- "household_power_consumption.txt"
+
+if (! file.exists(dataFile)) {
+  system("tar xfvz household_power_consumption.tgz")
+}
+
 setClass("myDate")
 setClass("myTime")
 
